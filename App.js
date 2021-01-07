@@ -26,7 +26,7 @@ export default function App() {
       <Text style={styles.text}>Calculadora IMC</Text>
       <View style={styles.infos}>
          <TextInput style={styles.inputPeso} placeholder="Peso (kg)" keyboardType="numeric" value={peso} onChangeText={(peso)=>{setPeso(peso)}}/>
-         <TextInput style={styles.inputAltura} placeholder="Altura (mt)" keyboardType="numeric" value={altura} onChangeText={(altura)=>{setAltura(altura)}}/>
+         <TextInput style={styles.inputAltura} placeholder="Altura (m)" keyboardType="numeric" value={altura} onChangeText={(altura)=>{setAltura(altura)}}/>
          <TouchableOpacity style={styles.inputButton} onPress={calcularImc}>
            <Text style={styles.buttonValue}>Calcular</Text>
          </TouchableOpacity>
